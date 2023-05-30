@@ -1,0 +1,665 @@
+<!doctype html>
+<html lang="en">
+<!-- kishan -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Manav kalyan samiti</title>
+    <!-- fevicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/icon/logo1.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/theme.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class=" navbar px-4 py-3">
+        <div class="d-flex justify-content-between align-items-center w-100">
+            <div class="d-flex align-items-center ">
+                <img class="logo" src="./assets/icon/logo1.png" alt="">
+                <div class="ms-2 logo-text">
+                    <h5 class="logo-text1 text-orange fw-bold">Shree Ram Chandra</h5>
+                    <p class="logo-text2 text-white">Manav Kalyan Samiti</p>
+                </div>
+            </div>
+            <div class="d-none d-lg-block">
+                <ul class="d-flex align-items-center gap-4 menu">
+                    <li><a href="/ShreeRam-ngo/index.html" class="menu-link nav-links p-2">ENGLISH</a></li>
+                    <li><a href="#" class="menu-link active nav-links p-2">होम </a></li>
+                    <li><a href="#about" class="menu-link nav-links p-2">हमारे बारे में</a></li>
+                    <li><a href="#contact" class="menu-link nav-links p-2">संपर्क करें</a></li>
+                    <li><a href="#blog" class="menu-link nav-links p-2">ब्लॉग</a></li>
+                    <button class="btn btn-orange-red text-white text-uppercase " id="rzp-button1"
+                        onclick="razorpay()"><i class="bi bi-heart-fill me-2"></i> दान देना</button>
+                </ul>
+            </div>
+            <div class="d-lg-none">
+                <button onClick="showMenu()" class="btn bg-orange  border-0 fs-5 text-white "><i
+                        class="bi bi-list"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <div id="sidebar" class="sidebar p-3">
+        <div class="h-100 d-flex flex-column justify-content-between">
+            <div>
+                <div class="d-flex justify-content-end">
+                    <button class="btn bg-transparent border-0 text-white fs-2" onclick="hideMenu()"><i
+                            class="bi bi-x-lg"></i></button>
+                </div>
+                <ul class="sidemenu-links-ul px-4">
+                    <li><a class="menu-link" href="#">होम</a></li>
+                    <li><a class="menu-link" href="#about">हमारे बारे में</a></li>
+                    <li><a class="menu-link" href="#blog">ब्लॉग </a></li>
+                    <li><a class="menu-link" href="#contact">संपर्क करें</a></li>
+                </ul>
+            </div>
+            <div>
+                <button
+                    class="btn w-100 btn-light py-3 text-uppercase text-orange fs-5 d-flex justify-content-center align-items-center"
+                    onclick="razorpay()"> <i class="bi bi-heart-fill sidemenu-donate-icon me-2"></i><span>दान
+                        देना</span></button>
+            </div>
+        </div>
+    </div>
+    <div onclick="hideMenu()" class="overlay-menu"></div>
+
+    <!-- navbar -->
+    <!-- hero -->
+    <div class="hero position-relative d-flex align-items-center">
+        <div class="hero-bg bg-web position-absolute w-100 h-100 ">
+            <div class="bg-hero-overlay"></div>
+            <img class="img-cover d-none d-md-block" src="https://shorturl.at/zCX89" alt="">
+            <img class="img-cover d-md-none" src="https://shorturl.at/bnpyB" alt="">
+        </div>
+
+        <div class="hero-content container">
+            <h1 class="text-orange display-5">उज्जवल की देखभाल</h1>
+            <span class="hero-text">
+                <p class=" display-font text-white">आने वाला कल </p>
+                <img class="d-none d-xl-block" src="./assets/icon/underline.svg" alt="">
+            </span>
+            <p class=" col-md-9  col-lg-6 col-12 text-white mt-2 fw-light  lh-sm">एक उज्ज्वल वंचित व्यक्ति की देखभाल के
+                लिए सामूहिक प्रयास और समर्थन की आवश्यकता होती है। हम उन व्यक्तियों, संगठनों और स्वयंसेवकों को आमंत्रित
+                करते हैं जो हमारे दृष्टिकोण को साझा करते हैं ताकि वे बदलाव लाने में हमारे साथ जुड़ सकें। चाहे वित्तीय
+                योगदान के माध्यम से, परामर्श, या अपने समय और विशेषज्ञता को स्वेच्छा से, आपकी भागीदारी हमें क्षमता को
+                अनलॉक करने और वंचित व्यक्तियों के लिए एक उज्जवल भविष्य बनाने में मदद कर सकती है।</p>
+            <button class="btn btn-orange-red px-4 text-white wallpaper-btn text-uppercase mt-3" id="rzp-button1"
+                onclick="razorpay()"><i class="bi bi-heart-fill me-2"></i>
+                दान देना</button>
+        </div>
+    </div>
+    <!-- hero -->
+    <!-- block 2 -->
+    <div class="block2 col-11 col-lg-10 col-xl-8 p-4 mx-auto rounded-4 ">
+        <div class="d-md-flex px-3 align-items-start">
+            <div class="col-12 mt-3 mt-md-0 col-md-4 blocks text-center">
+                <img src="./assets/icon/wallet-add.svg" alt="">
+                <p class="fs-4 display-font text-white ">अभी दान कीजिए</p>
+                <p class="text-light text-xs px-3">आपका सहयोग जीवन बदल सकता है। बदलाव लाने में आज ही हमसे जुड़ें।</p>
+            </div>
+
+            <div class="col-12 mt-3 mt-md-0 col-md-4 blocks text-center">
+                <img src="./assets/icon/book-saved.svg" alt="">
+                <p class="fs-4 display-font text-white ">छात्रवृत्ति दें</p>
+                <p class="text-light text-xs px-3">शिक्षा के माध्यम से छात्रों को उनके सपनों को साकार करने में मदद करें।
+                    आपका समर्थन जीवन बदल सकता है और एक उज्जवल भविष्य को आकार दे सकता है।</p>
+            </div>
+
+            <div class="col-12 mt-3 mt-md-0 col-md-4 blocks text-center">
+                <img src="./assets/icon/heart-add.svg" alt="">
+                <p class="fs-4 display-font text-white ">सदस्य बनें</p>
+                <p class="text-light text-xs px-3">हमारे समुदाय में शामिल हों और संभावनाओं की दुनिया अनलॉक करें। साथ
+                    मिलकर, हम सार्थक बदलाव ला सकते हैं और स्थायी प्रभाव डाल सकते हैं।</p>
+            </div>
+        </div>
+    </div>
+    <!-- block 2 -->
+    <!-- block 3 -->
+    <div class="d-lg-flex align-items-center block3 container" id="about">
+        <div class="col-lg-6 d-flex justify-content-center">
+            <img src="./assets/image/Group 57.png" alt="">
+        </div>
+        <div class="col-lg-6 mt-5 mt-lg-0">
+            <div>
+                <p class="text-uppercase fw-semibold">हमारे बारे में</p>
+                <p class="fs-1 display-font">हम भोजन, पानी, शिक्षा और अन्य के लिए 2015 से काम कर रहे हैं</p>
+                <p class="mt-2 text-xs ">At <span class="text-orange fw-bold fs-6">[श्री राम चंद्र मानव कल्याण
+                        समिति]</span>, हम 2015 में अपनी स्थापना के बाद से वंचित व्यक्तियों के जीवन को बेहतर बनाने के लिए
+                    समर्पित हैं। हमारा प्राथमिक ध्यान भिखारियों और वंचित समुदायों के लिए भोजन, पानी और शिक्षा की
+                    बुनियादी जरूरतों को पूरा करने पर है।</p>
+                <h5 class=" mt-3">हमारा विशेष कार्य:</h5>
+                <p class="mt-1 text-xs text-start"> हमारा मिशन उन लोगों को आवश्यक सहायता प्रदान करके एक अधिक न्यायसंगत
+                    समाज बनाना है जो सबसे कमजोर हैं और जिन्हें अक्सर अनदेखा किया जाता है। हमारा मानना है कि प्रत्येक
+                    व्यक्ति, उनकी परिस्थितियों की परवाह किए बिना, भोजन, स्वच्छ पानी और शिक्षा जैसे मौलिक मानवाधिकारों तक
+                    पहुंच का हकदार है।</p>
+            </div>
+        </div>
+    </div>
+    <!-- block 3 -->
+    <!-- donation -->
+    <div class="d-lg-flex block4 container align-items-center mb-5">
+        <div class="col-lg-4">
+            <p class="fw-semibold">एक मदद उन लोगों के लिए जिन्हें इसकी जरूरत है</p>
+            <h1 class="my-3 display-font fs-1"> बेसहारा बच्चे के लिए डोनेशन चाहिए</h1>
+            <p class="text-xs">हम असहाय और वंचित बच्चों के जीवन को बेहतर बनाने के लिए अथक प्रयास कर रहे हैं। हमारा दृढ़
+                विश्वास है कि प्रत्येक बच्चे को एक सुरक्षित, पोषण वाले वातावरण में बड़े होने और शिक्षा, स्वास्थ्य देखभाल
+                और उज्जवल भविष्य के अवसरों तक पहुंचने का अवसर मिलना चाहिए। हालाँकि, हम इसे अकेले हासिल नहीं कर सकते। इन
+                कमजोर बच्चों के जीवन में स्थायी प्रभाव डालने के लिए हमें दान के माध्यम से आपके समर्थन की आवश्यकता है ।
+            </p>
+        </div>
+        <div
+            class="col-lg-8 d-flex justify-content-center justify-content-lg-end position-relative mt-5 mb-lg-0 mb-5 mt-lg-0">
+
+            <div class="donation-form p-3 bg-white rounded-4">
+                <p class="text-center fs-5 "><span class="fw-semibold"><span class="display-font">₹</span>50 </span> का
+                    <span class="fw-semibold"><span class="display-font">₹</span>10 लाख</span> उठाया
+                </p>
+                <div class="donation-progressbar">
+                    <div class="donation-progress" style="width: 20%;"></div>
+                </div>
+                <div class="mt-3 d-flex p-2 border rounded-3">
+                    <div>
+                        <div
+                            class="donation-rupee bg-light-orange fs-3 display-font text-orange d-flex justify-content-center  align-items-center rounded-2">
+                            ₹
+                        </div>
+                    </div>
+                    <input type="number" id="inputBox" class="text-center w-100 ms-2 bg-transparent border-0">
+                </div>
+
+                <div class="mt-5 donation-amount-div">
+                    <div class="">
+                        <input type="radio" id="fifty" value="50" onclick="setInputValue(50)" name="donation-amount"
+                            class="donation-amount amount-active">
+                        <label class="donation-amount-label display-font" for="fifty">₹50</label>
+                    </div>
+                    <div class="">
+                        <input type="radio" id="hundred" value="100" onclick="setInputValue(100)" name="donation-amount"
+                            class="donation-amount">
+                        <label class="donation-amount-label display-font" for="hundred">₹100</label>
+                    </div>
+                    <div class="">
+                        <input type="radio" id="two-hundred" value="200" onclick="setInputValue(200)"
+                            name="donation-amount" class="donation-amount amount-active">
+                        <label class="donation-amount-label display-font" for="two-hundred">₹200</label>
+                    </div>
+                    <div class="">
+                        <input type="radio" id="five-hundred" value="500" onclick="setInputValue(500)"
+                            name="donation-amount" class="donation-amount amount-active">
+                        <label class="donation-amount-label display-font" for="five-hundred">₹500</label>
+                    </div>
+                    <div class="">
+                        <input type="radio" id="thousand" value="1000" onclick="setInputValue(1000)"
+                            name="donation-amount" class="donation-amount amount-active">
+                        <label class="donation-amount-label display-font" for="thousand">₹1000</label>
+                    </div>
+                    <div class="">
+                        <input type="radio" id="two-thousand" value="2000" onclick="setInputValue(2000)"
+                            name="donation-amount" class="donation-amount amount-active">
+                        <label class="donation-amount-label display-font" for="two-thousand">₹2000</label>
+                    </div>
+                    <div class="">
+                        <input type="radio" id="five-thousand" value="5000" onclick="setInputValue(5000)"
+                            name="donation-amount" class="donation-amount amount-active">
+                        <label class="donation-amount-label display-font" for="five-thousand">₹5000</label>
+                    </div>
+                    <div class="">
+                        <input type="radio" id="ten-thousand" value="10000" onclick="setInputValue(10000)"
+                            name="donation-amount" class="donation-amount amount-active">
+                        <label class="donation-amount-label display-font" for="ten-thousand">₹10000</label>
+                    </div>
+                </div>
+                <div>
+                    <button class="btn btn-orange-red text-white text-uppercase mt-3 w-100" id="rzp-button1"
+                        onclick="razorpay()"><i class="bi bi-heart-fill me-2"></i> दान देना</button>
+                </div>
+            </div>
+
+            <div id="carouselExampleSlidesOnly" class="carousel slide rounded-4 donation-img " data-bs-ride="carousel">
+                <div class="carousel-inner  rounded-5 h-100 ">
+                    <div class="carousel-item active h-100 w-100">
+                        <img src="https://images.pexels.com/photos/13701776/pexels-photo-13701776.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            class="d-block img-cover rounded-5" alt="...">
+                    </div>
+                    <div class="carousel-item h-100 w-100">
+                        <img src="https://images.pexels.com/photos/10023685/pexels-photo-10023685.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            class="d-block img-cover rounded-5" alt="...">
+                    </div>
+                    <div class="carousel-item  h-100 w-100">
+                        <img src="assets/image/poor-indian-children-asking-for-help.jpg"
+                            class="d-block img-cover rounded-5" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- donation -->
+    <!-- blogs -->
+    <div class=" blog  bg-light-orange position-relative pb-5 mb-5" id="blog">
+        <div class="container">
+            <h1 class="display-font text-center py-4">हाल के ब्लॉग</h1>
+
+            <div class="swiper blog-swiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide px-md-4">
+                        <div class="blog-div mx-auto p-sm-4 p-3 bg-white rounded-4">
+                            <div class="w-100 blog-img">
+                                <img class="img-cover rounded-3" src="https://shorturl.at/oyGQ1" alt="blog-1">
+                            </div>
+                            <div class="blog-content">
+                                <h1 class="display-font text-start fs-3 mt-3">कुशीनगर जिले को स्वावलंबी भिखारी बनाने की
+                                    योजना पर काम शुरू कर दिया गया है।</h1>
+                                <p class="text-start mt-1 display-font text-xs text-orange">26 दिसंबर 2022</p>
+                                <p class="mt-3 text-xs text-start">हमने कुशीनगर जिले को जीवित रहने के साधन के रूप में
+                                    भीख मांगने की आवश्यकता से मुक्त एक आत्मनिर्भर समुदाय बनाने के लिए एक परिवर्तनकारी
+                                    यात्रा शुरू की है। हमारा मानना है कि प्रत्येक व्यक्ति को एक सम्मानित जीवन जीने का
+                                    अवसर मिलना चाहिए और भीख मांगने के मूल कारणों को दूर करके हम कुशीनगर के निवासियों को
+                                    आत्मनिर्भर और आर्थिक रूप से स्वतंत्र बनने के लिए सशक्त बना सकते हैं। हमारी दृष्टि
+                                    कुशीनगर में एक ऐसे समाज का निर्माण करना है जहां प्रत्येक व्यक्ति के पास शिक्षा,
+                                    रोजगार और सहायता प्रणाली तक पहुंच हो जो उन्हें भीख के चक्र से मुक्त करने में सक्षम
+                                    बनाती है। हम एक ऐसे समुदाय का निर्माण करने का प्रयास करते हैं जो आत्मनिर्भरता,
+                                    लचीलापन और समावेशिता पर पनपे।</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide px-md-4">
+                        <div class="blog-div mx-auto p-sm-4 p-3 bg-white rounded-4">
+                            <div class="w-100 blog-img">
+                                <img class="img-cover rounded-3" src="assets/image/IMG-20230221-WA0004.jpg"
+                                    alt="blog-1">
+                            </div>
+                            <div class="blog-content">
+                                <h1 class="display-font text-start fs-3 mt-3">कुशीनगर डिस्टिक मे निर्धन कन्याओं का
+                                    सामूहिक विवाह संपन्न
+                                </h1>
+                                <p class="text-start mt-1 display-font text-xs text-orange">26 दिसंबर 2022</p>
+                                <p class="mt-4 text-xs text-start">कुशीनगर जिले में गरीब लड़कियों के लिए सामूहिक विवाह
+                                    समारोह एक अद्भुत पहल है जिसका उद्देश्य वंचित लड़कियों को शादी की दिशा में उनकी
+                                    यात्रा में वित्तीय सहायता और सहायता प्रदान करना है। इन समारोहों में एक साथ कई जोड़ों
+                                    का विवाह होता है, जिससे व्यक्तिगत परिवारों पर वित्तीय बोझ कम होता है। कुशीनगर जिले
+                                    में गरीब लड़कियों के सामूहिक विवाह समारोह न केवल परिवारों की वित्तीय स्थिरता में
+                                    योगदान करते हैं बल्कि समुदाय और समावेशिता की भावना को भी बढ़ावा देते हैं। एक साथ आने
+                                    और इन पहलों का समर्थन करने से, समाज जरूरतमंद लोगों के लिए अधिक न्यायसंगत वातावरण
+                                    बनाने में मदद कर सकता है।</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div>
+                    <div class="swiper-button-next rounded-circle"><i class="bi bi-arrow-right"></i></div>
+                </div>
+                <div>
+                    <div class="swiper-button-prev rounded-circle"><i class="bi bi-arrow-left"></i></div>
+                </div>
+
+                <div class="swiper-pagination mt-5"></div>
+            </div>
+        </div>
+    </div>
+    <!-- blogs -->
+    <!-- gallary -->
+    <div class="my-5 gallary">
+        <h1 class="display-font text-center">हमारी गैलरी</h1>
+        <p class="text-xs col-md-3 text-center mt-1 mx-auto">हमारे कुशीनगर जिले के कुछ स्वावलंबी गरीब व वंचित लोगों के
+            फोटो दिखाए गए हैं।</p>
+
+        <div class="swiper gallary-swiper-1 mt-5">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <a data-fslightbox href="#img-1">
+                        <img id="img-1" src="https://shorturl.at/awMX6" alt="Image">
+                        <span class="gallery-view-ovelay text-white fw-semibold">देखना</span>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a data-fslightbox href="#img-2">
+                        <img id="img-2" src="https://shorturl.at/dsuyJ" alt="Image">
+                        <span class="gallery-view-ovelay text-white fw-semibold">देखना</span>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a data-fslightbox href="#img-3">
+                        <img id="img-3"
+                            src="https://images.unsplash.com/photo-1518949142393-f1d68174c92a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+                            alt="Image">
+                        <span class="gallery-view-ovelay text-white fw-semibold">देखना</span>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a data-fslightbox href="#img-4">
+                        <img id="img-4"
+                            src="https://images.unsplash.com/photo-1542810634-71277d95dcbb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHBvb3J8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                            alt="Image">
+                        <span class="gallery-view-ovelay text-white fw-semibold">देखना</span>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a data-fslightbox href="#img-5">
+                        <img id="img-5"
+                            src="https://images.unsplash.com/photo-1632923057155-dd35366509ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHBvb3J8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                            alt="Image">
+                        <span class="gallery-view-ovelay text-white fw-semibold">देखना</span>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a data-fslightbox href="#img-6">
+                        <img id="img-6"
+                            src="https://images.unsplash.com/photo-1594708767771-a7502209ff51?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                            alt="Image">
+                        <span class="gallery-view-ovelay text-white fw-semibold">देखना</span>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a data-fslightbox href="#img-7">
+                        <img id="img-7"
+                            src="https://images.unsplash.com/photo-1533285962792-0c3c5e9cb0d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fHBvb3J8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                            alt="Image">
+                        <span class="gallery-view-ovelay text-white fw-semibold">देखना</span>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a data-fslightbox href="#img-8">
+                        <img id="img-8"
+                            src="https://images.unsplash.com/photo-1576381394626-53b3d2d48145?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fHBvb3J8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                            alt="Image">
+                        <span class="gallery-view-ovelay text-white fw-semibold">देखना</span>
+                    </a>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div dir="rtl" class="swiper gallary-swiper-2 mt-3">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <a data-fslightbox href="#img-9">
+                        <img id="img-9"
+                            src="https://images.unsplash.com/photo-1620337233295-b03852738f29?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDF8fHBvb3J8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                            alt="Image">
+                        <span class="gallery-view-ovelay text-white fw-semibold">देखना</span>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a data-fslightbox href="#img-10">
+                        <img id="img-10"
+                            src="https://images.unsplash.com/photo-1527348696784-c3ff7c1453f9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjJ8fHBvb3J8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                            alt="Image">
+                        <span class="gallery-view-ovelay text-white fw-semibold">देखना</span>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a data-fslightbox href="#img-11">
+                        <img id="img-11"
+                            src="https://images.unsplash.com/photo-1623399785391-6970a4e8d261?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjZ8fHBvb3J8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                            alt="Image">
+                        <span class="gallery-view-ovelay text-white fw-semibold">देखना</span>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a data-fslightbox href="#img-12">
+                        <img id="img-12"
+                            src="https://images.unsplash.com/photo-1622561029875-d966f88f5578?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njl8fHBvb3J8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                            alt="Image">
+                        <span class="gallery-view-ovelay text-white fw-semibold">देखना</span>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a data-fslightbox href="#img-13">
+                        <img id="img-13"
+                            src="https://images.unsplash.com/photo-1609075916355-cb02b783347e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODZ8fHBvb3J8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                            alt="Image">
+                        <span class="gallery-view-ovelay text-white fw-semibold">देखना</span>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a data-fslightbox href="#img-14">
+                        <img id="img-14"
+                            src="https://images.unsplash.com/photo-1623612320894-3067c0372e94?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTV8fHBvb3J8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                            alt="Image">
+                        <span class="gallery-view-ovelay text-white fw-semibold">देखना</span>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a data-fslightbox href="#img-15">
+                        <img id="img-15"
+                            src="https://images.unsplash.com/photo-1518174148433-c63260e11cb2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA4fHxwb29yfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                            alt="Image">
+                        <span class="gallery-view-ovelay text-white fw-semibold">देखना</span>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a data-fslightbox href="#img-16">
+                        <img id="img-16"
+                            src="https://images.unsplash.com/photo-1497486751825-1233686d5d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE0fHxwb29yfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                            alt="Image">
+                        <span class="gallery-view-ovelay text-white fw-semibold">देखना</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- gallary -->
+    <!-- contact us -->
+
+
+    <main class="bg-light" id="contact">
+        <div class=" py-5 d-md-flex d-block main-div">
+            <div class="position-relative">
+                <img src="assets/image/unsplash_AEaTUnvneik (4).png"
+                    class="img-fluid  box-height d-lg-block d-none main-img" alt="">
+                <img src="assets/image/Rectangle 28 (2).png"
+                    class="theme-img main-img top-0 img-fluid d-lg-block d-none" alt="">
+
+                <div class="d-lg-flex main-box justify-content-xl-around align-items-xl-center mt-lg-2">
+                    <div class="text-width">
+                        <p class="text-lg text-white d-lg-block d-none">सशक्त परिवर्तन, प्रेरक आशा।</p>
+                        <p class="text-white text-sm d-lg-block d-none">परिवर्तन की प्यासी दुनिया में, आइए हम विपरीत
+                            परिस्थितियों से ऊपर उठें और अपनी सामूहिक शक्ति को उजागर करें। दृढ़ संकल्प और करुणा के साथ,
+                            हम स्थायी परिवर्तन ला सकते हैं और आशा से भरे भविष्य को प्रेरित कर सकते हैं। साथ मिलकर, हमारे
+                            पास सभी के लिए एक उज्जवल और अधिक समावेशी दुनिया को आकार देने की ताकत है।</p>
+                    </div>
+                    <div class="p-xl-4 p-3  rounded-4 bg-white  input-box">
+                        <div class="form-width">
+                            <p class="fw-bold">संपर्क करें।</p>
+                            <form class="">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control mt-3" placeholder="नाम">
+                                    <label for="">नाम</label>
+                                </div>
+                                <div class="form-floating my-2">
+                                    <input type="email" class="form-control mt-3" placeholder="name@example.com">
+                                    <label for="">मेल पता</label>
+                                </div>
+                                <div class="form-floating mb-2">
+                                    <input type="tel" class="form-control mt-3" placeholder="Mobile no.">
+                                    <label for="">मोबाइल नंबर</label>
+                                </div>
+                                <div class="form-floating">
+                                    <textarea class="form-control mt-3" placeholder="Leave a comment here"
+                                        style="height: 100px"></textarea>
+                                    <label for="">टिप्पणियाँ</label>
+                                </div>
+                                <button class="btn w-100 input-btn fw-bold text-white mt-3">भेजना</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="position-relative d-flex justify-content-center">
+                <img src="assets/image/unsplash_fJ4t0rg8Fg0 (1).png" alt=""
+                    class="  me-lg-5 ps-lg-5 d-md-block d-flex justify-content-end mt-md-0 mt-4 side-img ">
+                <div class="positon-absolute text-center m-auto side-imgbox rounded-4">
+                    <p class="text-sm text-white mb-0 mt-4">हमें कॉल करें</p>
+                    <a href="tel:+917715934333" class="nav-link text-white fw-bold">+91 77159 34333</a>
+                    <a href="tel:+917715900000" class="nav-link text-white fw-bold">+91 77159 00000</a>
+                    <p class="text-sm text-white mb-0 mt-2">हमें मेल करें</p>
+                    <a href="mailto:Info@shreeramchandra.com"
+                        class="nav-link text-white fw-bold ">Info@shreeramchandra.com</a>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- contact us -->
+
+    <!-- contact us -->
+    <!-- donation bottom -->
+    <section class="overflow-hidden">
+        <div
+            class="om-box rounded-4 d-sm-flex justify-content-between align-items-center mt-5 position-relative m-auto">
+            <div class="text-half ms-4 px-sm-0 px-2 text-ram ">
+                <p class="text-white text-md mb-lg-3 mb-1 fs-2">"एकजुट दिल, प्रभाव पैदा करना।"</p>
+                <p class="text-sm text-white pt-sm-0 pt-3 ">
+                    जब दिल जुड़ते हैं, तो असाधारण प्रभाव सामने आता है। आइए हम एक साथ जुड़ें और एक स्थायी अंतर बनाएं।
+                </p>
+            </div>
+            <div class=" text-half img-ram">
+                <img src="./assets/icon/ramji.png" class="ram-ji " alt="">
+            </div>
+            <div class="text-half m-auto donate-btn d-md-block d-flex justify-content-center">
+                <button class="btn ram-btn px-md-4 px-3  py-2 rounded-pill fs-5 float-end me-md-3 mb-md-1 mb-1"
+                    id="rzp-button1" onclick="razorpay()"><i class="bi  bi-heart-fill heart-fill fs-5 "></i>
+                    दान देना</button>
+            </div>
+        </div>
+    </section>
+    <!-- donation bottom -->
+
+    <footer class=" position-relative pt-5">
+        <div class="d-flex justify-content-center ">
+            <!-- subscribe -->
+            <div
+                class="sbscribe-box d-md-flex justify-content-between align-items-center px-lg-5 px-2 position-absolute">
+                <div class="news-width mt-2">
+                    <p class="text-white news-text mb-0 ">"वृत्त पत्र शामिल होना।"</p>
+                    <p class="text-white text-sm ">
+                        हमारे न्यूज़लेटर के लिए साइन अप करें और सीधे अपने इनबॉक्स में नवीनतम अपडेट, अंतर्दृष्टि और
+                        प्रेरणा प्राप्त करने के लिए जुड़े रहें।
+                    </p>
+                </div>
+                <div class=" mt-md-0 mt-1">
+                    <input type="email" class="border-0 w-100 rounded-pill input-ram py-2 ps-3" placeholder="Email">
+                    <button
+                        class="btn subscribe-btn px-4 fw-bold py-2 float-end rounded-pill fs-6 mt-md-2 mt-2  ">सदस्यता
+                        लें</button>
+                </div>
+            </div>
+            <!-- subscribe -->
+        </div>
+        <div class="container footer ">
+            <div class="row d-flex flex-wrap">
+                <div class="col-lg-3 col-md-6 mt-3  ">
+                    <div class="d-flex align-items-center">
+                        <img src="./assets/icon/logo.png" alt="" width="200" class="">
+
+                    </div>
+                    <p class="text-sm footer-text text-light my-4 fw-light">हम जीवन और समुदायों को बेहतर बनाने के लिए
+                        प्रतिबद्ध एक समर्पित संगठन हैं। साथ मिलकर हम सभी के लिए एक उज्जवल भविष्य बना सकते हैं। #मानव
+                        कल्याण</p>
+                    <div class="d-flex gap-4 ">
+                        <a href=""><i class="bi text-secondar icons fs-5 bi-instagram"></i></a>
+                        <a href=""><i class="bi text-secondar icons fs-5 bi-facebook"></i></a>
+                        <a href=""><i class="bi text-secondar icons fs-5 bi-twitter"></i></a>
+                        <a href=""><i class="bi text-secondar icons fs-5 bi-youtube"></i></a>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-4  ">
+                    <h6 class="text-white btm-border">संपर्क</h6>
+                    <p class="text-sm footer-text text-light mt-4 mb-3">ऑप सेंट ज्यूज जरीमारी रोड अंधेरी, मुंबई, मुंबई,
+                        400072, भारत
+                    </p>
+                    <a href="tel:+917715934333" class="text-sm footer-text text-light "><span
+                            class="text-orange fw-medium">फ़ोन नंबर
+                        </span> : +917715934333</a><br>
+                    <a href="mailto:info@shreeramchandra.com" class="text-sm footer-text text-light"><span
+                            class="text-orange fw-medium">ईमेल </span> : Info@shreeramchandra.com</a>
+                </div>
+                <div class="col-xl-3 col-lg-2 col-md-6 mt-4  ">
+                    <h6 class="text-white btm-border">मेनू</h6>
+                    <ul class="navbar-nav mt-3">
+                        <li class="nav-items"><a class="nav-link text-sm footer-text text-light" href="#">होम पेज</a>
+                        </li>
+                        <li class="nav-items"><a class="nav-link text-sm footer-text text-light" href="#about">हमारे
+                                बारे में</a>
+                        </li>
+                        <li class="nav-items"><a class="nav-link text-sm footer-text text-light" href="#contact">संपर्क
+                                करें</a>
+                        </li>
+                        <li class="nav-items"><a class="nav-link text-sm footer-text text-light" href="#blog">ब्लॉग</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 mt-4  ">
+                    <h5 class="text-white mb-4 btm-border">हमें एक संदेश छोड़ दो</h5>
+                    <form>
+                        <input type="text" class="bg-transparent form-control text-light" placeholder="नाम">
+                        <input type="email" class="bg-transparent form-control text-light my-2" placeholder="ईमेल">
+                        <textarea class="form-control text-light bg-transparent" placeholder="संदेश"
+                            style="height: 100px"></textarea>
+
+                        <button class="btn w-50 float-end btn footer-btn fw-bold  mt-3">भेजना</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="text-center border-top border-1 border-secondary mt-4 mx-sm-5">
+            <p class=" text-light copyright-txt py-4">Copyright © 2023 Shree Ram Chandra Manav Kalyan Samiti. All rights
+                reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/fslightbox.js"></script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="./js/payment.js"></script>
+    
+</body>
+
+</html>
